@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:upleveled/thank-u-next-codealong.git",
   "author": "Karl Horky <karl.horky@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "todomvc-app-css": "^2.4.1"
+  }
 }

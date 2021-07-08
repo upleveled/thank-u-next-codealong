@@ -12,7 +12,7 @@
   }
   </script>
 </head>
-<body bgcolor="#f5f5f5" alink="#0000ff" vlink="#0000ff">
+<body bgcolor="#f5f5f5" alink="#0000ff" vlink="#0000ff" border="0">
 <form onSubmit=add()>
 <center>
 <table width="550" cellpadding="10" cellspacing="0" bgcolor="#ffffff" border="1" bordercolor="#d6d6d6">
@@ -70,20 +70,19 @@
     }
 
 
-    if (state.numTodos > 0) {
-        document.write('<tr><td>');
-        document.write('<table width="100%" border="0" cellpadding="4" cellspacing="0">');
-        document.write('<tr><td width="33%"><font size="3" face="arial,helvetica">' + incomplete + ' item' + (incomplete != 1 ? 's' : '') + '</td>');
-        document.write('<td width="33%" align="center"><font size="3" face="arial,helvetica">');
+    document.write('<tr><td>');
+    document.write('<table width="100%" border="0" cellpadding="4" cellspacing="0">');
+    document.write('<tr><td width="33%"><font size="3" face="arial,helvetica">' + incomplete + ' item' + (incomplete != 1 ? 's' : '') + '</td>');
+    document.write('<td width="33%" align="center"><font size="3" face="arial,helvetica">');
 
-        writeFilter('All');
-        writeFilter('Active');
-        writeFilter('Completed', true);
+    writeFilter('All');
+    writeFilter('Active');
+    writeFilter('Completed', true);
 
-        document.write('</td>');
-        document.write('<td width="33%" align="right"><font size="3" face="arial,helvetica"><a href="#" onclick="parent.clearCompleted();return false;">Clear completed');
-        document.write('</tr></table></td></tr>');
-    }
+    document.write('</td>');
+    document.write('<td width="33%" align="right"><font size="3" face="arial,helvetica"><a href="#" onclick="parent.clearCompleted();return false;">Clear completed');
+    document.write('</tr></table></td></tr>');
+
     document.forms[0].todo.focus();
     </script>
 </table>
