@@ -1,2 +1,2 @@
 [build]
-  command = "cd new && yarn build"
+  command = "cp -R old-dev dist/old && cd new-dev && yarn build && mv build ../dist/new"

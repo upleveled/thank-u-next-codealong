@@ -1,10 +1,10 @@
 {
-  "name": "new",
+  "name": "new-dev",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Karl Horky",
   "license": "MIT",
   "scripts": {
-    "build": "echo 'asdf' > index.html"
+    "build": "mkdir build && echo 'asdf' > build/index.html"
   }
 }
