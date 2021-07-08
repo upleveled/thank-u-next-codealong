@@ -11,8 +11,5 @@
   ],
   "scripts": {
     "build": "cp -R packages/old-dev dist/old && yarn workspace new-dev build"
-  },
-  "dependencies": {
-    "todomvc-app-css": "^2.4.1"
   }
 }

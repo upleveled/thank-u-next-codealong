@@ -99,6 +99,7 @@ export default function App() {
           <ul className="filters">
             {FILTER_TITLES.map((filterName) => (
               <li key={filterName}>
+                {/* eslint-disable jsx-a11y/anchor-is-valid */}
                 <a
                   className={filter === filterName ? 'selected' : ''}
                   style={{ cursor: 'pointer' }}
@@ -106,6 +107,7 @@ export default function App() {
                 >
                   {filterName}
                 </a>
+                {/* eslint-enable jsx-a11y/anchor-is-valid */}
               </li>
             ))}
           </ul>
