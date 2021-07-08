@@ -1,0 +1,10 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Karl Horky",
+  "license": "MIT",
+  "scripts": {
+    "build": "echo 'asdf' > index.html"
+  }
+}
