@@ -5,6 +5,13 @@
   "repository": "git@github.com:upleveled/thank-u-next-codealong.git",
   "author": "Karl Horky <karl.horky@gmail.com>",
   "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "cp -R packages/old-dev dist/old && yarn workspace new-dev build"
+  },
   "dependencies": {
     "todomvc-app-css": "^2.4.1"
   }
