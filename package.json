@@ -10,6 +10,6 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "cp -R packages/old-dev dist/old && yarn workspace new-dev build"
+    "build": "cp -R packages/old-dev dist/old && yarn workspace modern-dev build"
   }
 }
