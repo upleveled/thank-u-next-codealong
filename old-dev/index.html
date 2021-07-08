@@ -5,7 +5,6 @@
 </head>
 <script>
 function rerender() {
-    frames[1].history.go(0);
     frames[1].location.reload();
 }
 
@@ -57,10 +56,8 @@ function makeTodo(id, label, complete) {
 var state = new Object();
 state.filter = 'all';
 state.todos = new Object();
-state.todos[0] = makeTodo(1, 'abc', true);
-state.todos[1] = makeTodo(2, 'def', false);
-state.numTodos = 3;
-state.nextId = 4;
+state.numTodos = 0;
+state.nextId = 1;
 </script>
 <FRAMESET rows="75,*">
     <FRAME src="header.html" scrolling=no>
